@@ -1,5 +1,5 @@
 {
-  "exclude": ["out", "node_modules"],
+  "exclude": ["out", "node_modules", "client"],
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "out",

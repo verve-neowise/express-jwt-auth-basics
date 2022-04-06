@@ -9,6 +9,8 @@ const router = Router()
 
 router.post('/register', (req, res) => {
 
+	console.log(req.body);
+
 	let { name, lastname, username, password } = req.body
 
 	let oldUser = userStorage.findUser(username)
@@ -50,7 +52,7 @@ router.post('/login', (req, res) => {
 	let user = userStorage.findUser(username)
 
 	if (user === undefined) {
-		return res.status(404).send({
+		return res.status(403).send({
 			message: 'user with username: ' + username + ' not found.'
 		})
 	}

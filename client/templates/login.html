@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head theme-data="dark">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Login</title>
+</head>
+
+<body class="bg-neutral">
+
+	<div class="flex justify-center items-center h-screen w-full">
+
+		<div class="card w-96 bg-base-300 shadow-xl">
+			<div class="card-header">
+				<h1 class="text-xl p-3 text-center font-bold">Login</h1>
+			</div>
+			<figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+			<div class="card-body">
+
+				<form id="form" class="flex flex-col gap-3">
+
+					<div class="form-control w-full max-w-xs">
+						<input name="username" type="text" placeholder="Username" class="input input-bordered w-full max-w-xs">
+					</div>
+	
+					<div class="form-control w-full max-w-xs">
+						<input  name="password" type="password" placeholder="Password" class="input input-bordered w-full max-w-xs">
+					</div>
+	
+					<button type="submit" class="btn w-full btn-primary mt-3">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

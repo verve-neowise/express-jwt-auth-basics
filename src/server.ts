@@ -1,11 +1,13 @@
 import express from 'express'
 import path from 'path'
+import cors from 'cors'
 
 import authRoutes from './routes/auth.routes'
 import homeRoutes from './routes/home.routes'
 
 // express config
 const app = express()
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded( { extended: true } ))
 app.use(express.static(path.join(__dirname, "../public")))
@@ -39,4 +41,4 @@ app.post('/', (req, res) => {
 	})
 })
 
-app.listen(8080, () => console.log("Server is running on http://localhost:8080"))
+app.listen(8081, () => console.log("Server is running on http://localhost:8081"))
